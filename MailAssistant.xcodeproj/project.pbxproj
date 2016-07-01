@@ -1,0 +1,914 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF6F5B361D265FA50025414F /* EncodingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F5B331D265FA50025414F /* EncodingRequest.swift */; };
+		CF6F5B371D265FA50025414F /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F5B341D265FA50025414F /* Parameter.swift */; };
+		CF6F5B381D265FA50025414F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F5B351D265FA50025414F /* Router.swift */; };
+		CF9453BE1D2502F7009E2D0E /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9453BD1D2502F7009E2D0E /* Helper.swift */; };
+		CF9453C01D25033D009E2D0E /* CommonCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9453BF1D25033D009E2D0E /* CommonCrypto.swift */; };
+		CF9453C21D250744009E2D0E /* ConfigApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9453C11D250744009E2D0E /* ConfigApi.swift */; };
+		CF9453C61D251EA4009E2D0E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9453C51D251EA4009E2D0E /* Request.swift */; };
+		CF9453C91D252545009E2D0E /* example.eml in Resources */ = {isa = PBXBuildFile; fileRef = CF9453C81D252545009E2D0E /* example.eml */; };
+		CFF893B91D250132004A92B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF893B81D250132004A92B7 /* AppDelegate.swift */; };
+		CFF893BB1D250132004A92B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF893BA1D250132004A92B7 /* ViewController.swift */; };
+		CFF893BE1D250132004A92B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFF893BC1D250132004A92B7 /* Main.storyboard */; };
+		CFF893C01D250132004A92B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFF893BF1D250132004A92B7 /* Assets.xcassets */; };
+		CFF893C31D250132004A92B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFF893C11D250132004A92B7 /* LaunchScreen.storyboard */; };
+		CFF893CE1D250133004A92B7 /* MailAssistantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF893CD1D250133004A92B7 /* MailAssistantTests.swift */; };
+		CFF893D91D250133004A92B7 /* MailAssistantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF893D81D250133004A92B7 /* MailAssistantUITests.swift */; };
+		CFF893EE1D250143004A92B7 /* CommonCrypto.h in Headers */ = {isa = PBXBuildFile; fileRef = CFF893ED1D250143004A92B7 /* CommonCrypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFF893F51D250143004A92B7 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF893EB1D250143004A92B7 /* CommonCrypto.framework */; };
+		CFF893FC1D250143004A92B7 /* CommonCryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF893FB1D250143004A92B7 /* CommonCryptoTests.swift */; };
+		CFF894001D250143004A92B7 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF893EB1D250143004A92B7 /* CommonCrypto.framework */; };
+		CFF894011D250143004A92B7 /* CommonCrypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFF893EB1D250143004A92B7 /* CommonCrypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CFF894111D25018C004A92B7 /* CommonCrypto.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CFF8940B1D25018C004A92B7 /* CommonCrypto.xcconfig */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFF893CA1D250133004A92B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFF893AD1D250132004A92B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFF893B41D250132004A92B7;
+			remoteInfo = MailAssistant;
+		};
+		CFF893D51D250133004A92B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFF893AD1D250132004A92B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFF893B41D250132004A92B7;
+			remoteInfo = MailAssistant;
+		};
+		CFF893F61D250143004A92B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFF893AD1D250132004A92B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFF893EA1D250143004A92B7;
+			remoteInfo = CommonCrypto;
+		};
+		CFF893F81D250143004A92B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFF893AD1D250132004A92B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFF893B41D250132004A92B7;
+			remoteInfo = MailAssistant;
+		};
+		CFF893FE1D250143004A92B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFF893AD1D250132004A92B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFF893EA1D250143004A92B7;
+			remoteInfo = CommonCrypto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CFF894051D250143004A92B7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CFF894011D250143004A92B7 /* CommonCrypto.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CF6F5B331D265FA50025414F /* EncodingRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodingRequest.swift; sourceTree = "<group>"; };
+		CF6F5B341D265FA50025414F /* Parameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameter.swift; sourceTree = "<group>"; };
+		CF6F5B351D265FA50025414F /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		CF9453BD1D2502F7009E2D0E /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		CF9453BF1D25033D009E2D0E /* CommonCrypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonCrypto.swift; sourceTree = "<group>"; };
+		CF9453C11D250744009E2D0E /* ConfigApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigApi.swift; sourceTree = "<group>"; };
+		CF9453C51D251EA4009E2D0E /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		CF9453C81D252545009E2D0E /* example.eml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = example.eml; sourceTree = "<group>"; };
+		CFF893B51D250132004A92B7 /* MailAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MailAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFF893B81D250132004A92B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CFF893BA1D250132004A92B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CFF893BD1D250132004A92B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CFF893BF1D250132004A92B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CFF893C21D250132004A92B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CFF893C41D250132004A92B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFF893C91D250133004A92B7 /* MailAssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MailAssistantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFF893CD1D250133004A92B7 /* MailAssistantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailAssistantTests.swift; sourceTree = "<group>"; };
+		CFF893CF1D250133004A92B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFF893D41D250133004A92B7 /* MailAssistantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MailAssistantUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFF893D81D250133004A92B7 /* MailAssistantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailAssistantUITests.swift; sourceTree = "<group>"; };
+		CFF893DA1D250133004A92B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFF893EB1D250143004A92B7 /* CommonCrypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonCrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFF893ED1D250143004A92B7 /* CommonCrypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonCrypto.h; sourceTree = "<group>"; };
+		CFF893EF1D250143004A92B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFF893F41D250143004A92B7 /* CommonCryptoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonCryptoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFF893FB1D250143004A92B7 /* CommonCryptoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCryptoTests.swift; sourceTree = "<group>"; };
+		CFF893FD1D250143004A92B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFF894091D25018C004A92B7 /* appletvos.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = appletvos.modulemap; sourceTree = "<group>"; };
+		CFF8940A1D25018C004A92B7 /* appletvsimulator.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = appletvsimulator.modulemap; sourceTree = "<group>"; };
+		CFF8940B1D25018C004A92B7 /* CommonCrypto.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = CommonCrypto.xcconfig; sourceTree = "<group>"; };
+		CFF8940C1D25018C004A92B7 /* iphoneos.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = iphoneos.modulemap; sourceTree = "<group>"; };
+		CFF8940D1D25018C004A92B7 /* iphonesimulator.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = iphonesimulator.modulemap; sourceTree = "<group>"; };
+		CFF8940E1D25018C004A92B7 /* macosx.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = macosx.modulemap; sourceTree = "<group>"; };
+		CFF8940F1D25018C004A92B7 /* watchos.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = watchos.modulemap; sourceTree = "<group>"; };
+		CFF894101D25018C004A92B7 /* watchsimulator.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = watchsimulator.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFF893B21D250132004A92B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFF894001D250143004A92B7 /* CommonCrypto.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFF893C61D250133004A92B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFF893D11D250133004A92B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFF893E71D250143004A92B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFF893F11D250143004A92B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFF893F51D250143004A92B7 /* CommonCrypto.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF9453B81D2502E7009E2D0E /* AppConfig */ = {
+			isa = PBXGroup;
+			children = (
+				CF9453C11D250744009E2D0E /* ConfigApi.swift */,
+			);
+			path = AppConfig;
+			sourceTree = "<group>";
+		};
+		CF9453B91D2502E7009E2D0E /* Class */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		CF9453BA1D2502E7009E2D0E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CF9453BD1D2502F7009E2D0E /* Helper.swift */,
+				CF9453BF1D25033D009E2D0E /* CommonCrypto.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		CF9453BB1D2502E7009E2D0E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF9453BC1D2502E7009E2D0E /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		CF9453C41D251E5F009E2D0E /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				CF6F5B331D265FA50025414F /* EncodingRequest.swift */,
+				CF6F5B341D265FA50025414F /* Parameter.swift */,
+				CF6F5B351D265FA50025414F /* Router.swift */,
+				CF9453C51D251EA4009E2D0E /* Request.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		CF9453C71D25253E009E2D0E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CF9453C81D252545009E2D0E /* example.eml */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CFF893AC1D250132004A92B7 = {
+			isa = PBXGroup;
+			children = (
+				CFF893B71D250132004A92B7 /* MailAssistant */,
+				CFF893CC1D250133004A92B7 /* MailAssistantTests */,
+				CFF893D71D250133004A92B7 /* MailAssistantUITests */,
+				CFF893EC1D250143004A92B7 /* CommonCrypto */,
+				CFF893FA1D250143004A92B7 /* CommonCryptoTests */,
+				CFF893B61D250132004A92B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CFF893B61D250132004A92B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFF893B51D250132004A92B7 /* MailAssistant.app */,
+				CFF893C91D250133004A92B7 /* MailAssistantTests.xctest */,
+				CFF893D41D250133004A92B7 /* MailAssistantUITests.xctest */,
+				CFF893EB1D250143004A92B7 /* CommonCrypto.framework */,
+				CFF893F41D250143004A92B7 /* CommonCryptoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFF893B71D250132004A92B7 /* MailAssistant */ = {
+			isa = PBXGroup;
+			children = (
+				CF9453C71D25253E009E2D0E /* Resources */,
+				CF9453C41D251E5F009E2D0E /* Request */,
+				CF9453B81D2502E7009E2D0E /* AppConfig */,
+				CF9453B91D2502E7009E2D0E /* Class */,
+				CF9453BA1D2502E7009E2D0E /* Helper */,
+				CF9453BB1D2502E7009E2D0E /* Model */,
+				CF9453BC1D2502E7009E2D0E /* Screen */,
+				CFF893B81D250132004A92B7 /* AppDelegate.swift */,
+				CFF893BA1D250132004A92B7 /* ViewController.swift */,
+				CFF893BC1D250132004A92B7 /* Main.storyboard */,
+				CFF893BF1D250132004A92B7 /* Assets.xcassets */,
+				CFF893C11D250132004A92B7 /* LaunchScreen.storyboard */,
+				CFF893C41D250132004A92B7 /* Info.plist */,
+			);
+			path = MailAssistant;
+			sourceTree = "<group>";
+		};
+		CFF893CC1D250133004A92B7 /* MailAssistantTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFF893CD1D250133004A92B7 /* MailAssistantTests.swift */,
+				CFF893CF1D250133004A92B7 /* Info.plist */,
+			);
+			path = MailAssistantTests;
+			sourceTree = "<group>";
+		};
+		CFF893D71D250133004A92B7 /* MailAssistantUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CFF893D81D250133004A92B7 /* MailAssistantUITests.swift */,
+				CFF893DA1D250133004A92B7 /* Info.plist */,
+			);
+			path = MailAssistantUITests;
+			sourceTree = "<group>";
+		};
+		CFF893EC1D250143004A92B7 /* CommonCrypto */ = {
+			isa = PBXGroup;
+			children = (
+				CFF894091D25018C004A92B7 /* appletvos.modulemap */,
+				CFF8940A1D25018C004A92B7 /* appletvsimulator.modulemap */,
+				CFF8940B1D25018C004A92B7 /* CommonCrypto.xcconfig */,
+				CFF8940C1D25018C004A92B7 /* iphoneos.modulemap */,
+				CFF8940D1D25018C004A92B7 /* iphonesimulator.modulemap */,
+				CFF8940E1D25018C004A92B7 /* macosx.modulemap */,
+				CFF8940F1D25018C004A92B7 /* watchos.modulemap */,
+				CFF894101D25018C004A92B7 /* watchsimulator.modulemap */,
+				CFF893ED1D250143004A92B7 /* CommonCrypto.h */,
+				CFF893EF1D250143004A92B7 /* Info.plist */,
+			);
+			path = CommonCrypto;
+			sourceTree = "<group>";
+		};
+		CFF893FA1D250143004A92B7 /* CommonCryptoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFF893FB1D250143004A92B7 /* CommonCryptoTests.swift */,
+				CFF893FD1D250143004A92B7 /* Info.plist */,
+			);
+			path = CommonCryptoTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CFF893E81D250143004A92B7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFF893EE1D250143004A92B7 /* CommonCrypto.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CFF893B41D250132004A92B7 /* MailAssistant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFF893DD1D250133004A92B7 /* Build configuration list for PBXNativeTarget "MailAssistant" */;
+			buildPhases = (
+				CFF893B11D250132004A92B7 /* Sources */,
+				CFF893B21D250132004A92B7 /* Frameworks */,
+				CFF893B31D250132004A92B7 /* Resources */,
+				CFF894051D250143004A92B7 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFF893FF1D250143004A92B7 /* PBXTargetDependency */,
+			);
+			name = MailAssistant;
+			productName = MailAssistant;
+			productReference = CFF893B51D250132004A92B7 /* MailAssistant.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CFF893C81D250133004A92B7 /* MailAssistantTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFF893E01D250133004A92B7 /* Build configuration list for PBXNativeTarget "MailAssistantTests" */;
+			buildPhases = (
+				CFF893C51D250133004A92B7 /* Sources */,
+				CFF893C61D250133004A92B7 /* Frameworks */,
+				CFF893C71D250133004A92B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFF893CB1D250133004A92B7 /* PBXTargetDependency */,
+			);
+			name = MailAssistantTests;
+			productName = MailAssistantTests;
+			productReference = CFF893C91D250133004A92B7 /* MailAssistantTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CFF893D31D250133004A92B7 /* MailAssistantUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFF893E31D250133004A92B7 /* Build configuration list for PBXNativeTarget "MailAssistantUITests" */;
+			buildPhases = (
+				CFF893D01D250133004A92B7 /* Sources */,
+				CFF893D11D250133004A92B7 /* Frameworks */,
+				CFF893D21D250133004A92B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFF893D61D250133004A92B7 /* PBXTargetDependency */,
+			);
+			name = MailAssistantUITests;
+			productName = MailAssistantUITests;
+			productReference = CFF893D41D250133004A92B7 /* MailAssistantUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		CFF893EA1D250143004A92B7 /* CommonCrypto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFF894021D250143004A92B7 /* Build configuration list for PBXNativeTarget "CommonCrypto" */;
+			buildPhases = (
+				CFF893E61D250143004A92B7 /* Sources */,
+				CFF893E71D250143004A92B7 /* Frameworks */,
+				CFF893E81D250143004A92B7 /* Headers */,
+				CFF893E91D250143004A92B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CommonCrypto;
+			productName = CommonCrypto;
+			productReference = CFF893EB1D250143004A92B7 /* CommonCrypto.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CFF893F31D250143004A92B7 /* CommonCryptoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFF894061D250143004A92B7 /* Build configuration list for PBXNativeTarget "CommonCryptoTests" */;
+			buildPhases = (
+				CFF893F01D250143004A92B7 /* Sources */,
+				CFF893F11D250143004A92B7 /* Frameworks */,
+				CFF893F21D250143004A92B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFF893F71D250143004A92B7 /* PBXTargetDependency */,
+				CFF893F91D250143004A92B7 /* PBXTargetDependency */,
+			);
+			name = CommonCryptoTests;
+			productName = CommonCryptoTests;
+			productReference = CFF893F41D250143004A92B7 /* CommonCryptoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFF893AD1D250132004A92B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Zinio Pro";
+				TargetAttributes = {
+					CFF893B41D250132004A92B7 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = PLXE7WQM67;
+						DevelopmentTeamName = "Dung Vu";
+						ProvisioningStyle = Automatic;
+					};
+					CFF893C81D250133004A92B7 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = PLXE7WQM67;
+						DevelopmentTeamName = "Dung Vu";
+						ProvisioningStyle = Automatic;
+						TestTargetID = CFF893B41D250132004A92B7;
+					};
+					CFF893D31D250133004A92B7 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = PLXE7WQM67;
+						DevelopmentTeamName = "Dung Vu";
+						ProvisioningStyle = Automatic;
+						TestTargetID = CFF893B41D250132004A92B7;
+					};
+					CFF893EA1D250143004A92B7 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = PLXE7WQM67;
+						DevelopmentTeamName = "Dung Vu";
+						ProvisioningStyle = Automatic;
+					};
+					CFF893F31D250143004A92B7 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = PLXE7WQM67;
+						DevelopmentTeamName = "Dung Vu";
+						ProvisioningStyle = Automatic;
+						TestTargetID = CFF893B41D250132004A92B7;
+					};
+				};
+			};
+			buildConfigurationList = CFF893B01D250132004A92B7 /* Build configuration list for PBXProject "MailAssistant" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFF893AC1D250132004A92B7;
+			productRefGroup = CFF893B61D250132004A92B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFF893B41D250132004A92B7 /* MailAssistant */,
+				CFF893C81D250133004A92B7 /* MailAssistantTests */,
+				CFF893D31D250133004A92B7 /* MailAssistantUITests */,
+				CFF893EA1D250143004A92B7 /* CommonCrypto */,
+				CFF893F31D250143004A92B7 /* CommonCryptoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFF893B31D250132004A92B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFF893C31D250132004A92B7 /* LaunchScreen.storyboard in Resources */,
+				CFF893C01D250132004A92B7 /* Assets.xcassets in Resources */,
+				CFF893BE1D250132004A92B7 /* Main.storyboard in Resources */,
+				CF9453C91D252545009E2D0E /* example.eml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFF893C71D250133004A92B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFF893D21D250133004A92B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFF893E91D250143004A92B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFF894111D25018C004A92B7 /* CommonCrypto.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFF893F21D250143004A92B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFF893B11D250132004A92B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFF893BB1D250132004A92B7 /* ViewController.swift in Sources */,
+				CF9453C61D251EA4009E2D0E /* Request.swift in Sources */,
+				CFF893B91D250132004A92B7 /* AppDelegate.swift in Sources */,
+				CF6F5B371D265FA50025414F /* Parameter.swift in Sources */,
+				CF6F5B381D265FA50025414F /* Router.swift in Sources */,
+				CF6F5B361D265FA50025414F /* EncodingRequest.swift in Sources */,
+				CF9453C21D250744009E2D0E /* ConfigApi.swift in Sources */,
+				CF9453BE1D2502F7009E2D0E /* Helper.swift in Sources */,
+				CF9453C01D25033D009E2D0E /* CommonCrypto.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFF893C51D250133004A92B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFF893CE1D250133004A92B7 /* MailAssistantTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFF893D01D250133004A92B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFF893D91D250133004A92B7 /* MailAssistantUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFF893E61D250143004A92B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFF893F01D250143004A92B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFF893FC1D250143004A92B7 /* CommonCryptoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFF893CB1D250133004A92B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFF893B41D250132004A92B7 /* MailAssistant */;
+			targetProxy = CFF893CA1D250133004A92B7 /* PBXContainerItemProxy */;
+		};
+		CFF893D61D250133004A92B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFF893B41D250132004A92B7 /* MailAssistant */;
+			targetProxy = CFF893D51D250133004A92B7 /* PBXContainerItemProxy */;
+		};
+		CFF893F71D250143004A92B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFF893EA1D250143004A92B7 /* CommonCrypto */;
+			targetProxy = CFF893F61D250143004A92B7 /* PBXContainerItemProxy */;
+		};
+		CFF893F91D250143004A92B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFF893B41D250132004A92B7 /* MailAssistant */;
+			targetProxy = CFF893F81D250143004A92B7 /* PBXContainerItemProxy */;
+		};
+		CFF893FF1D250143004A92B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFF893EA1D250143004A92B7 /* CommonCrypto */;
+			targetProxy = CFF893FE1D250143004A92B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CFF893BC1D250132004A92B7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFF893BD1D250132004A92B7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CFF893C11D250132004A92B7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFF893C21D250132004A92B7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFF893DB1D250133004A92B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CFF893DC1D250133004A92B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFF893DE1D250133004A92B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MailAssistant/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZinioReader.MailAssistant;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CFF893DF1D250133004A92B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MailAssistant/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZinioReader.MailAssistant;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CFF893E11D250133004A92B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MailAssistantTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZinioReader.MailAssistantTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MailAssistant.app/MailAssistant";
+			};
+			name = Debug;
+		};
+		CFF893E21D250133004A92B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MailAssistantTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZinioReader.MailAssistantTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MailAssistant.app/MailAssistant";
+			};
+			name = Release;
+		};
+		CFF893E41D250133004A92B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MailAssistantUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZinioReader.MailAssistantUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MailAssistant;
+			};
+			name = Debug;
+		};
+		CFF893E51D250133004A92B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MailAssistantUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZinioReader.MailAssistantUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = MailAssistant;
+			};
+			name = Release;
+		};
+		CFF894031D250143004A92B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFF8940B1D25018C004A92B7 /* CommonCrypto.xcconfig */;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CommonCrypto/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZinioReader.CommonCrypto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CFF894041D250143004A92B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFF8940B1D25018C004A92B7 /* CommonCrypto.xcconfig */;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CommonCrypto/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZinioReader.CommonCrypto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CFF894071D250143004A92B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFF8940B1D25018C004A92B7 /* CommonCrypto.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = CommonCryptoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZinioReader.CommonCryptoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MailAssistant.app/MailAssistant";
+			};
+			name = Debug;
+		};
+		CFF894081D250143004A92B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFF8940B1D25018C004A92B7 /* CommonCrypto.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = CommonCryptoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZinioReader.CommonCryptoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MailAssistant.app/MailAssistant";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFF893B01D250132004A92B7 /* Build configuration list for PBXProject "MailAssistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFF893DB1D250133004A92B7 /* Debug */,
+				CFF893DC1D250133004A92B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFF893DD1D250133004A92B7 /* Build configuration list for PBXNativeTarget "MailAssistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFF893DE1D250133004A92B7 /* Debug */,
+				CFF893DF1D250133004A92B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFF893E01D250133004A92B7 /* Build configuration list for PBXNativeTarget "MailAssistantTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFF893E11D250133004A92B7 /* Debug */,
+				CFF893E21D250133004A92B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFF893E31D250133004A92B7 /* Build configuration list for PBXNativeTarget "MailAssistantUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFF893E41D250133004A92B7 /* Debug */,
+				CFF893E51D250133004A92B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFF894021D250143004A92B7 /* Build configuration list for PBXNativeTarget "CommonCrypto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFF894031D250143004A92B7 /* Debug */,
+				CFF894041D250143004A92B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFF894061D250143004A92B7 /* Build configuration list for PBXNativeTarget "CommonCryptoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFF894071D250143004A92B7 /* Debug */,
+				CFF894081D250143004A92B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFF893AD1D250132004A92B7 /* Project object */;
+}
