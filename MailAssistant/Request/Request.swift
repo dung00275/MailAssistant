@@ -8,17 +8,27 @@
 
 import Foundation
 
+// MARK: - Wrapper result
+public struct Result{
+    let json: [String: AnyObject]?
+    let error: NSError?
+}
 
+// MARK: - RequestManager
 public class RequestManager: NSObject {
     
     public static let sharedInstance = RequestManager()
     
     private lazy var session: URLSession = {
+        
+        let configuration = URLSessionConfiguration.default()
+        configuration.timeoutIntervalForRequest = 30
+        
         let queue = OperationQueue()
         queue.name = "RequestManager.Excuting.Request"
         queue.qualityOfService = .utility
         
-        let newSession = URLSession(configuration: URLSessionConfiguration.default(),
+        let newSession = URLSession(configuration: configuration,
                                     delegate: nil,
                                     delegateQueue: queue)
         
@@ -30,14 +40,28 @@ public class RequestManager: NSObject {
         super.init()
     }
     
-    public func request(router: Router, completion: (Data?, URLResponse?, NSError?) -> ()) -> URLSessionDataTask? {
+    public func request(router: Router, completion: (Result, URLResponse?) -> ()) -> URLSessionDataTask? {
         guard let request = router.urlRequest else {
             let error = NSError(domain: NSURLErrorDomain, code: NSURLErrorUnsupportedURL, userInfo: [NSLocalizedDescriptionKey : "URL request nil!!"])
-            completion(nil, nil, error)
+            completion(Result(json: nil, error: error), nil)
             return nil
         }
         
-        let dataTask = session.dataTask(with: request, completionHandler: completion)
+        let dataTask = session.dataTask(with: request) { (data, response, error) in
+            if let error = error {
+                completion(Result(json: nil, error: error), response)
+            }else {
+                guard let data = data else {
+                    let error = NSError(domain: NSURLErrorDomain, code: NSURLErrorCannotParseResponse, userInfo: [NSLocalizedDescriptionKey : "No Response!!"])
+                    completion(Result(json: nil, error: error), nil)
+                    return
+                }
+                
+                completion(data.convertToJson(), response)
+            }
+            
+            
+        }
         dataTask.resume()
         
         return dataTask

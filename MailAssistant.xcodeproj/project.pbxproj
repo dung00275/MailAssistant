@@ -10,6 +10,7 @@
 		CF6F5B361D265FA50025414F /* EncodingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F5B331D265FA50025414F /* EncodingRequest.swift */; };
 		CF6F5B371D265FA50025414F /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F5B341D265FA50025414F /* Parameter.swift */; };
 		CF6F5B381D265FA50025414F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F5B351D265FA50025414F /* Router.swift */; };
+		CF6F5B3A1D267CC40025414F /* EnumType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F5B391D267CC40025414F /* EnumType.swift */; };
 		CF9453BE1D2502F7009E2D0E /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9453BD1D2502F7009E2D0E /* Helper.swift */; };
 		CF9453C01D25033D009E2D0E /* CommonCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9453BF1D25033D009E2D0E /* CommonCrypto.swift */; };
 		CF9453C21D250744009E2D0E /* ConfigApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9453C11D250744009E2D0E /* ConfigApi.swift */; };
@@ -86,6 +87,7 @@
 		CF6F5B331D265FA50025414F /* EncodingRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodingRequest.swift; sourceTree = "<group>"; };
 		CF6F5B341D265FA50025414F /* Parameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameter.swift; sourceTree = "<group>"; };
 		CF6F5B351D265FA50025414F /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		CF6F5B391D267CC40025414F /* EnumType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumType.swift; sourceTree = "<group>"; };
 		CF9453BD1D2502F7009E2D0E /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		CF9453BF1D25033D009E2D0E /* CommonCrypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonCrypto.swift; sourceTree = "<group>"; };
 		CF9453C11D250744009E2D0E /* ConfigApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigApi.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 		CF9453BB1D2502E7009E2D0E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CF6F5B391D267CC40025414F /* EnumType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -529,6 +532,7 @@
 			files = (
 				CFF893BB1D250132004A92B7 /* ViewController.swift in Sources */,
 				CF9453C61D251EA4009E2D0E /* Request.swift in Sources */,
+				CF6F5B3A1D267CC40025414F /* EnumType.swift in Sources */,
 				CFF893B91D250132004A92B7 /* AppDelegate.swift in Sources */,
 				CF6F5B371D265FA50025414F /* Parameter.swift in Sources */,
 				CF6F5B381D265FA50025414F /* Router.swift in Sources */,

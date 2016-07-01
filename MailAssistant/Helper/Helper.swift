@@ -31,3 +31,15 @@ func convertCharacterSetToString(_ characterSet: NSCharacterSet) -> String{
     
     return array.joined(separator: "")
 }
+
+// MARK: - Convert Data to Json
+extension Data{
+    func convertToJson() -> Result {
+        do{
+            let result = try JSONSerialization.jsonObject(with: self, options: []) as? [String: AnyObject]
+            return Result(json: result, error: nil)
+        }catch let newError as NSError {
+            return Result(json: nil, error: newError)
+        }
+    }
+}

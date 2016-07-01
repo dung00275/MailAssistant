@@ -59,11 +59,25 @@ public struct EncodingParameterRequest {
     
     
     // Make Request From Params
-    public static func makeRequest(_ params: [String: AnyObject], url: URL, method: APIMethod) -> URLRequest {
+    public static func makeRequest(_ params: [String: AnyObject],
+                                   url: URL,
+                                   method: APIMethod ,
+                                   headers: [String: String]? = nil) -> URLRequest
+    {
         var request = URLRequest(url: url)
-        request.httpMethod = APIMethod.POST.rawValue
-        request.setValue("application/x-www-form-urlencoded; charset=utf-8",
-                         forHTTPHeaderField: "Content-Type")
+        request.httpMethod = method.rawValue
+        
+        if let headers = headers {
+            for (headerField, headerValue) in headers {
+                request.setValue(headerValue, forHTTPHeaderField: headerField)
+            }
+        }
+        
+        if request.allHTTPHeaderFields?["Content-Type"] == nil {
+            request.setValue("application/x-www-form-urlencoded; charset=utf-8",
+                             forHTTPHeaderField: "Content-Type")
+        }
+        
         
         request.httpBody = queryParameters(fromParams: params).data(using: String.Encoding.utf8)
         

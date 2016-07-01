@@ -14,29 +14,23 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+//        let locale = Locale.current().localeIdentifier
+//        
+//        let _ = RequestManager.sharedInstance.request(router: .AddUser(nameUser: "test", locale: locale)) { (result, response) in
+//            let json = result.json
+//            let error = result.error
+//            
+//            print(json, error?.localizedDescription)
+//            
+//        }
         
-        guard let pathEml = Bundle.main().urlForResource("example", withExtension: "eml")?.path else {
-            return
-        }
-        do {
-            let data = try String(contentsOfFile: pathEml).trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
-            let _ = RequestManager.sharedInstance.request(router: .Discovery(fileEml: data),
-                                                  completion:
-                { (data, response, error) in
-                
-                guard let data = data where error == nil else {
-                    return
-                }
-                do{
-                    let json =  try JSONSerialization.jsonObject(with: data, options: [])
-                    print(json)
-                }catch let newError as NSError {
-                    print(newError.localizedDescription)
-                }
-            })
+        
+        let _ = RequestManager.sharedInstance.request(router: .GetEmailConnections(nameUser: "test")) { (result, response) in
+            let json = result.json
+            let error = result.error
             
-        } catch let error as NSError {
-            print(error.localizedDescription)
+            print(json, error?.localizedDescription)
+            
         }
         
     }

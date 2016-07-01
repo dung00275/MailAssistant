@@ -21,6 +21,7 @@ struct ApiKeyEasilydo {
 public enum APIMethod: String {
     case POST = "POST"
     case GET = "GET"
+    case UNKNOWN = ""
 }
 
 // MARK: - API path
@@ -34,7 +35,6 @@ public struct APIPath {
     
     // Email connection
     static let emailConnections         = "/v1/users/%@/email_connections"
-    static let addEmailConnections      = "/v1/users/%@/email_connections"
     static let deleteEmailConnection    = "/v1/users/%@/email_connections/%@"
     
     // Sifts
