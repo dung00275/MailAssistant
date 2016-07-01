@@ -14,9 +14,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-//        let locale = Locale.current().localeIdentifier
-//        
-//        let _ = RequestManager.sharedInstance.request(router: .AddUser(nameUser: "test", locale: locale)) { (result, response) in
+        let locale = Locale.current().localeIdentifier
+        
+        let _ = RequestManager.sharedInstance.request(router: .AddUser(nameUser: "test", locale: locale)) { (result, response) in
+            let json = result.json
+            let error = result.error
+            
+            print(json, error?.localizedDescription)
+            
+        }
+        
+        
+//        let _ = RequestManager.sharedInstance.request(router: .GetEmailConnections(nameUser: "test")) { (result, response) in
 //            let json = result.json
 //            let error = result.error
 //            
@@ -24,8 +33,7 @@ class ViewController: UIViewController {
 //            
 //        }
         
-        
-        let _ = RequestManager.sharedInstance.request(router: .GetEmailConnections(nameUser: "test")) { (result, response) in
+        let _ = RequestManager.sharedInstance.request(router: .GetListSifts(nameUser: "test")) { (result, response) in
             let json = result.json
             let error = result.error
             

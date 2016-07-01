@@ -16,7 +16,7 @@ public enum Router {
     case GetEmailConnections(nameUser: String)
     case AddEmailConnection(nameUser: String, mail: UserMailType)
     
-    case GetSifts()
+    case GetListSifts(nameUser: String)
     
     var urlRequest: URLRequest? {
         
@@ -35,10 +35,7 @@ public enum Router {
             urlComponents?.path = APIPath.addUser
             params["username"] = nameUser
             params["locale"] = locale
-            
-        case .GetSifts():
-            method = .GET
-            
+        
         case .GetEmailConnections(let nameUser):
             method = .GET
             let path = String(format: APIPath.emailConnections, nameUser)
@@ -72,6 +69,11 @@ public enum Router {
                 params["host"] = host
                 params["account"] = account
             }
+            
+        case .GetListSifts(let nameUser):
+            method = .GET
+            let path = String(format: APIPath.listSifts, nameUser)
+            urlComponents?.path = path
         }
         
         guard let url = urlComponents?.url, path = urlComponents?.path else {
