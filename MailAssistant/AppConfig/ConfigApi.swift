@@ -17,6 +17,10 @@ struct ApiKeyEasilydo {
     static let kKeyPublic = "9edcab0443cc50824a234c660690eb"
 }
 
+struct Google {
+    static let kClientId = "122106404544-scs58on68s24fv89rlautnt9v0t670ev.apps.googleusercontent.com"
+}
+
 // MARK: - Method
 public enum APIMethod: String {
     case POST = "POST"

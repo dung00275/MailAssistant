@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BFE4EB083C3B98B6E797783 /* Pods_MailAssistantTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DECFE08067B78DDD0CAF1C2E /* Pods_MailAssistantTests.framework */; };
+		69E4333DD619E9AB403CB430 /* Pods_MailAssistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C9D9E1BA31C3828E77B1BE /* Pods_MailAssistant.framework */; };
+		CF2A3CFA1D2A463900408EFD /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2A3CF91D2A463900408EFD /* AddressBook.framework */; };
+		CF2A3CFC1D2A465000408EFD /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2A3CFB1D2A465000408EFD /* SafariServices.framework */; };
+		CF2A3CFE1D2A465C00408EFD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2A3CFD1D2A465C00408EFD /* SystemConfiguration.framework */; };
+		CF2A3D0A1D2A51B800408EFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF2A3D091D2A51B800408EFD /* GoogleService-Info.plist */; };
 		CF6F5B361D265FA50025414F /* EncodingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F5B331D265FA50025414F /* EncodingRequest.swift */; };
 		CF6F5B371D265FA50025414F /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F5B341D265FA50025414F /* Parameter.swift */; };
 		CF6F5B381D265FA50025414F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F5B351D265FA50025414F /* Router.swift */; };
@@ -28,7 +34,7 @@
 		CFF893FC1D250143004A92B7 /* CommonCryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF893FB1D250143004A92B7 /* CommonCryptoTests.swift */; };
 		CFF894001D250143004A92B7 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFF893EB1D250143004A92B7 /* CommonCrypto.framework */; };
 		CFF894011D250143004A92B7 /* CommonCrypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CFF893EB1D250143004A92B7 /* CommonCrypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CFF894111D25018C004A92B7 /* CommonCrypto.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CFF8940B1D25018C004A92B7 /* CommonCrypto.xcconfig */; };
+		F8F64ACE89F534BBCB012E63 /* Pods_MailAssistantUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BFFE9B614B70D323ACD6F5B /* Pods_MailAssistantUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +90,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0323F52E08BA12279891844B /* Pods_CommonCrypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonCrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C6E116BCE73C0CAC5E9C68E /* Pods-MailAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MailAssistant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MailAssistant/Pods-MailAssistant.debug.xcconfig"; sourceTree = "<group>"; };
+		45171EC6017FF30943C99D32 /* Pods-MailAssistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MailAssistant.release.xcconfig"; path = "Pods/Target Support Files/Pods-MailAssistant/Pods-MailAssistant.release.xcconfig"; sourceTree = "<group>"; };
+		4BFFE9B614B70D323ACD6F5B /* Pods_MailAssistantUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MailAssistantUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56C210E6283EE093273C7FBE /* Pods-MailAssistantUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MailAssistantUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MailAssistantUITests/Pods-MailAssistantUITests.release.xcconfig"; sourceTree = "<group>"; };
+		758430C12CCCC983F8273518 /* Pods-MailAssistantUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MailAssistantUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MailAssistantUITests/Pods-MailAssistantUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		86CA91A6BECC9D04C79A39D6 /* Pods_CommonCryptoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonCryptoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C237919129817502F4AEE5B6 /* Pods-MailAssistantTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MailAssistantTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MailAssistantTests/Pods-MailAssistantTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CF2A3CF91D2A463900408EFD /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		CF2A3CFB1D2A465000408EFD /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		CF2A3CFD1D2A465C00408EFD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CF2A3D091D2A51B800408EFD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CF6F5B331D265FA50025414F /* EncodingRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodingRequest.swift; sourceTree = "<group>"; };
 		CF6F5B341D265FA50025414F /* Parameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameter.swift; sourceTree = "<group>"; };
 		CF6F5B351D265FA50025414F /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -120,6 +138,9 @@
 		CFF8940E1D25018C004A92B7 /* macosx.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = macosx.modulemap; sourceTree = "<group>"; };
 		CFF8940F1D25018C004A92B7 /* watchos.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = watchos.modulemap; sourceTree = "<group>"; };
 		CFF894101D25018C004A92B7 /* watchsimulator.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = watchsimulator.modulemap; sourceTree = "<group>"; };
+		D14ACF1F9C950F6068D38CEE /* Pods-MailAssistantTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MailAssistantTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MailAssistantTests/Pods-MailAssistantTests.release.xcconfig"; sourceTree = "<group>"; };
+		D8C9D9E1BA31C3828E77B1BE /* Pods_MailAssistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MailAssistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DECFE08067B78DDD0CAF1C2E /* Pods_MailAssistantTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MailAssistantTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +148,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF2A3CFE1D2A465C00408EFD /* SystemConfiguration.framework in Frameworks */,
+				CF2A3CFC1D2A465000408EFD /* SafariServices.framework in Frameworks */,
+				CF2A3CFA1D2A463900408EFD /* AddressBook.framework in Frameworks */,
 				CFF894001D250143004A92B7 /* CommonCrypto.framework in Frameworks */,
+				69E4333DD619E9AB403CB430 /* Pods_MailAssistant.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BFE4EB083C3B98B6E797783 /* Pods_MailAssistantTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8F64ACE89F534BBCB012E63 /* Pods_MailAssistantUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +190,88 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B53A9756ADD94E6FFDBFDE7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C6E116BCE73C0CAC5E9C68E /* Pods-MailAssistant.debug.xcconfig */,
+				45171EC6017FF30943C99D32 /* Pods-MailAssistant.release.xcconfig */,
+				C237919129817502F4AEE5B6 /* Pods-MailAssistantTests.debug.xcconfig */,
+				D14ACF1F9C950F6068D38CEE /* Pods-MailAssistantTests.release.xcconfig */,
+				758430C12CCCC983F8273518 /* Pods-MailAssistantUITests.debug.xcconfig */,
+				56C210E6283EE093273C7FBE /* Pods-MailAssistantUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF2A3CE81D2A45F300408EFD /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		CF2A3CF81D2A463900408EFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF2A3CFD1D2A465C00408EFD /* SystemConfiguration.framework */,
+				CF2A3CFB1D2A465000408EFD /* SafariServices.framework */,
+				CF2A3CF91D2A463900408EFD /* AddressBook.framework */,
+				0323F52E08BA12279891844B /* Pods_CommonCrypto.framework */,
+				86CA91A6BECC9D04C79A39D6 /* Pods_CommonCryptoTests.framework */,
+				D8C9D9E1BA31C3828E77B1BE /* Pods_MailAssistant.framework */,
+				DECFE08067B78DDD0CAF1C2E /* Pods_MailAssistantTests.framework */,
+				4BFFE9B614B70D323ACD6F5B /* Pods_MailAssistantUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF93760D1D2A05F90048FAB8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CF93760E1D2A05F90048FAB8 /* Exchange */,
+				CF93760F1D2A05F90048FAB8 /* Google */,
+				CF9376101D2A05F90048FAB8 /* Imap */,
+				CF9376111D2A05F90048FAB8 /* Live */,
+				CF9376121D2A05F90048FAB8 /* Yahoo */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CF93760E1D2A05F90048FAB8 /* Exchange */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Exchange;
+			sourceTree = "<group>";
+		};
+		CF93760F1D2A05F90048FAB8 /* Google */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Google;
+			sourceTree = "<group>";
+		};
+		CF9376101D2A05F90048FAB8 /* Imap */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Imap;
+			sourceTree = "<group>";
+		};
+		CF9376111D2A05F90048FAB8 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		CF9376121D2A05F90048FAB8 /* Yahoo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Yahoo;
+			sourceTree = "<group>";
+		};
 		CF9453B81D2502E7009E2D0E /* AppConfig */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +325,7 @@
 		CF9453C71D25253E009E2D0E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CF2A3D091D2A51B800408EFD /* GoogleService-Info.plist */,
 				CF9453C81D252545009E2D0E /* example.eml */,
 			);
 			path = Resources;
@@ -230,6 +340,8 @@
 				CFF893EC1D250143004A92B7 /* CommonCrypto */,
 				CFF893FA1D250143004A92B7 /* CommonCryptoTests */,
 				CFF893B61D250132004A92B7 /* Products */,
+				CF2A3CF81D2A463900408EFD /* Frameworks */,
+				9B53A9756ADD94E6FFDBFDE7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -248,6 +360,8 @@
 		CFF893B71D250132004A92B7 /* MailAssistant */ = {
 			isa = PBXGroup;
 			children = (
+				CF2A3CE81D2A45F300408EFD /* Lib */,
+				CF93760D1D2A05F90048FAB8 /* Services */,
 				CF9453C71D25253E009E2D0E /* Resources */,
 				CF9453C41D251E5F009E2D0E /* Request */,
 				CF9453B81D2502E7009E2D0E /* AppConfig */,
@@ -327,10 +441,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFF893DD1D250133004A92B7 /* Build configuration list for PBXNativeTarget "MailAssistant" */;
 			buildPhases = (
+				8993B4A1F48DE2B95B8649A9 /* [CP] Check Pods Manifest.lock */,
 				CFF893B11D250132004A92B7 /* Sources */,
 				CFF893B21D250132004A92B7 /* Frameworks */,
 				CFF893B31D250132004A92B7 /* Resources */,
 				CFF894051D250143004A92B7 /* Embed Frameworks */,
+				2021B21DDF7B84FC2D71D390 /* [CP] Embed Pods Frameworks */,
+				DD059608D2BC15AF018A88D6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -346,9 +463,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFF893E01D250133004A92B7 /* Build configuration list for PBXNativeTarget "MailAssistantTests" */;
 			buildPhases = (
+				8ED930109FFEF4907413AE06 /* [CP] Check Pods Manifest.lock */,
 				CFF893C51D250133004A92B7 /* Sources */,
 				CFF893C61D250133004A92B7 /* Frameworks */,
 				CFF893C71D250133004A92B7 /* Resources */,
+				C089412E8C1193FC8E984CB1 /* [CP] Embed Pods Frameworks */,
+				95A51C95F78CCB202ADB4C2B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -364,9 +484,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFF893E31D250133004A92B7 /* Build configuration list for PBXNativeTarget "MailAssistantUITests" */;
 			buildPhases = (
+				CC381EB8CF66100871FF50A4 /* [CP] Check Pods Manifest.lock */,
 				CFF893D01D250133004A92B7 /* Sources */,
 				CFF893D11D250133004A92B7 /* Frameworks */,
 				CFF893D21D250133004A92B7 /* Resources */,
+				D71659B883D2255BEE88A792 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -489,6 +611,7 @@
 			files = (
 				CFF893C31D250132004A92B7 /* LaunchScreen.storyboard in Resources */,
 				CFF893C01D250132004A92B7 /* Assets.xcassets in Resources */,
+				CF2A3D0A1D2A51B800408EFD /* GoogleService-Info.plist in Resources */,
 				CFF893BE1D250132004A92B7 /* Main.storyboard in Resources */,
 				CF9453C91D252545009E2D0E /* example.eml in Resources */,
 			);
@@ -512,7 +635,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFF894111D25018C004A92B7 /* CommonCrypto.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +646,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2021B21DDF7B84FC2D71D390 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MailAssistant/Pods-MailAssistant-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8993B4A1F48DE2B95B8649A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8ED930109FFEF4907413AE06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		95A51C95F78CCB202ADB4C2B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MailAssistantTests/Pods-MailAssistantTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C089412E8C1193FC8E984CB1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MailAssistantTests/Pods-MailAssistantTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC381EB8CF66100871FF50A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D71659B883D2255BEE88A792 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MailAssistantUITests/Pods-MailAssistantUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD059608D2BC15AF018A88D6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MailAssistant/Pods-MailAssistant-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CFF893B11D250132004A92B7 /* Sources */ = {
@@ -713,11 +958,16 @@
 		};
 		CFF893DE1D250133004A92B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C6E116BCE73C0CAC5E9C68E /* Pods-MailAssistant.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MailAssistant/Lib/Google",
+				);
 				INFOPLIST_FILE = MailAssistant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ZinioReader.MailAssistant;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dungvh.MailAssistant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -725,11 +975,16 @@
 		};
 		CFF893DF1D250133004A92B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45171EC6017FF30943C99D32 /* Pods-MailAssistant.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MailAssistant/Lib/Google",
+				);
 				INFOPLIST_FILE = MailAssistant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ZinioReader.MailAssistant;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dungvh.MailAssistant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -737,6 +992,7 @@
 		};
 		CFF893E11D250133004A92B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C237919129817502F4AEE5B6 /* Pods-MailAssistantTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MailAssistantTests/Info.plist;
@@ -750,6 +1006,7 @@
 		};
 		CFF893E21D250133004A92B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D14ACF1F9C950F6068D38CEE /* Pods-MailAssistantTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MailAssistantTests/Info.plist;
@@ -763,6 +1020,7 @@
 		};
 		CFF893E41D250133004A92B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 758430C12CCCC983F8273518 /* Pods-MailAssistantUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = MailAssistantUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -775,6 +1033,7 @@
 		};
 		CFF893E51D250133004A92B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56C210E6283EE093273C7FBE /* Pods-MailAssistantUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = MailAssistantUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -797,7 +1056,7 @@
 				INFOPLIST_FILE = CommonCrypto/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ZinioReader.CommonCrypto;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dungvh.CommonCrypto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -819,7 +1078,7 @@
 				INFOPLIST_FILE = CommonCrypto/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ZinioReader.CommonCrypto;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dungvh.CommonCrypto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;

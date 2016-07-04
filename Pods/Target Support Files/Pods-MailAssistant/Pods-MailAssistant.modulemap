@@ -1,0 +1,6 @@
+framework module Pods_MailAssistant {
+  umbrella header "Pods-MailAssistant-umbrella.h"
+
+  export *
+  module * { export * }
+}

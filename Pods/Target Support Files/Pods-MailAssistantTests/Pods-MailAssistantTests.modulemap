@@ -1,0 +1,6 @@
+framework module Pods_MailAssistantTests {
+  umbrella header "Pods-MailAssistantTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
