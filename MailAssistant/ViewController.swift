@@ -42,12 +42,17 @@ class ViewController: UIViewController {
 //            print(json, error?.localizedDescription)
 //            
 //        }
+        let time = DispatchTime.now()
+        DispatchQueue.main.after(when: time) { [weak self] in
+            self?.signInYahoo()
+        }
+        
         
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        signInYahoo()
+        
         
     }
 

@@ -21,7 +21,7 @@ public class RequestManager: NSObject {
     
     private lazy var session: URLSession = {
         
-        let configuration = URLSessionConfiguration.default()
+        let configuration = URLSessionConfiguration.default
         configuration.timeoutIntervalForRequest = 30
         
         let queue = OperationQueue()

@@ -14,7 +14,7 @@ public struct EncodingParameterRequest {
     // Remove Character Not Expect
     private static func escape(_ string: String) -> String {
         
-        let strSet = convertCharacterSetToString(NSCharacterSet.urlQueryAllowed())
+        let strSet = convertCharacterSetToString(NSCharacterSet.urlQueryAllowed)
         let generalDelimitersToEncode = ":#[]@"
         let subDelimitersToEncode = "!$&'()*+,;="
         

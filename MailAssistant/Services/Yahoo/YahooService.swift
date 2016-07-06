@@ -55,6 +55,7 @@ class YahooService: NSObject {
     
     private func sendUserProfileRequest() {
         // Initialize profile request
+        isExcuting = true
         let userRequest = YOSUserRequest(session: session)
         userRequest?.fetchProfile(withDelegate: self)
     }
@@ -64,16 +65,29 @@ class YahooService: NSObject {
 // MARK: - Session delegate
 extension YahooService: YahooSessionDelegate {
     func didReceiveAuthorization() {
-        if alreadyLogin() {
-            DispatchQueue(label: "Sync.AccessToken").sync(execute: { () -> () in
+        var isReadyLogin: Bool = false
+        DispatchQueue(label: "Sync.AccessToken").sync(execute: { () -> () in
+            isReadyLogin = alreadyLogin()
+            if isReadyLogin {
                 sendUserProfileRequest()
-            })
-            return
-        }
+            }else {
+                isExcuting = false
+                let error = NSError(domain: NSURLErrorDomain, code: NSURLErrorUnknown, userInfo: [NSLocalizedDescriptionKey: "Not have access token!!!"])
+                self.delegate?.didLoginYahooFail(error: error)
+            }
+            
+        })
         
-        isExcuting = false
-        let error = NSError(domain: NSURLErrorDomain, code: NSURLErrorUnknown, userInfo: [NSLocalizedDescriptionKey: "Not have access token!!!"])
-        self.delegate?.didLoginYahooFail(error: error)
+        
+        
+//        if alreadyLogin() {
+//            DispatchQueue(label: "Sync.AccessToken").sync(execute: { () -> () in
+//                sendUserProfileRequest()
+//            })
+//            return
+//        }
+        
+        
     }
     func didFailAuthoriaztion(_ error: NSError!) {
         isExcuting = false
@@ -101,8 +115,9 @@ extension YahooService: YOSRequestDelegate {
     }
     
     func requestDidFinishLoading(_ result: YOSResponseData!) {
-        isExcuting = false
+        
         self.delegate?.didLoginYahooSuccessful(result: result)
+        isExcuting = false
         print("finish!!!")
     }
 }
