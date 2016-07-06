@@ -9,12 +9,12 @@
 import UIKit
 import GoogleSignIn
 import GGLSignIn
+import YahooLogin
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    var session: YahooSession?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         GIDSignIn.sharedInstance().clientID = Google.kClientId

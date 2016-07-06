@@ -21,6 +21,11 @@ struct Google {
     static let kClientId = "122106404544-scs58on68s24fv89rlautnt9v0t670ev.apps.googleusercontent.com"
 }
 
+struct Yahoo {
+    static let kClientId = "dj0yJmk9VFJrQXdHd2VqNjA1JmQ9WVdrOVlWSkJlbUZRTlRJbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmeD03MQ--"
+    static let kSerectId = "b8a84c1847f88a3577caf57f3d1112e1d0c23edf"
+}
+
 // MARK: - Method
 public enum APIMethod: String {
     case POST = "POST"

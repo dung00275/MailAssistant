@@ -9,7 +9,7 @@
 import UIKit
 import CommonCrypto
 import GoogleSignIn
-
+import YahooLogin
 
 class ViewController: UIViewController {
 
@@ -43,15 +43,11 @@ class ViewController: UIViewController {
 //            
 //        }
         
-        GIDSignIn.sharedInstance().delegate = self
-        GIDSignIn.sharedInstance().uiDelegate = self
+    }
     
-        if GIDSignIn.sharedInstance().hasAuthInKeychain() {
-            GIDSignIn.sharedInstance().signInSilently()
-        }else {
-            GIDSignIn.sharedInstance().signIn()
-        }
-        
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        signInYahoo()
         
     }
 
@@ -60,11 +56,58 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    func showAlert(title: String? ,message: String?) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let OKAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        
+        alert.addAction(OKAction)
+        present(alert, animated: true, completion: nil)
+    }
 }
+
+// MARK: - Yahoo
+extension ViewController: YahooServiceDelegate {
+    
+    func signInYahoo() {
+        YahooService.sharedInstance.delegate = self
+        YahooService.sharedInstance.signIn()
+        
+    }
+    
+    func willYahooLogin() {
+        
+    }
+    
+    func didLoginYahooSuccessful(result: YOSResponseData?){
+        print(result?.responseJSONDict)
+        
+        let token: YOSAccessToken? = YahooService.sharedInstance.token()
+        print(token?.tokenAsDictionary())
+    }
+    func didLoginYahooFail(error: NSError?){
+        showAlert(title: "", message: error?.localizedDescription)
+    }
+    
+    func didLoginYahooCancel() {
+        print("Cancel login");
+    }
+}
+
 
 // MARK: - Google
 extension ViewController {
+    func signInGoogle() {
+        GIDSignIn.sharedInstance().delegate = self
+        GIDSignIn.sharedInstance().uiDelegate = self
+        
+        if GIDSignIn.sharedInstance().hasAuthInKeychain() {
+            GIDSignIn.sharedInstance().signInSilently()
+        }else {
+            GIDSignIn.sharedInstance().signIn()
+        }
+
+    }
+    
     func addUserGoogle (email: String, token: String){
         
         let _ = RequestManager.sharedInstance.request(router: Router.AddEmailConnection(nameUser: "test", mail: .Google(account: email, token: token))) { (result, response) in

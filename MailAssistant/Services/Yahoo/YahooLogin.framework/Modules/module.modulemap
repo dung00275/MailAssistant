@@ -1,0 +1,6 @@
+framework module YahooLogin {
+  umbrella header "YahooLogin.h"
+
+  export *
+  module * { export * }
+}

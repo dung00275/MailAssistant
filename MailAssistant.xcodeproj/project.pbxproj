@@ -17,6 +17,9 @@
 		CF6F5B371D265FA50025414F /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F5B341D265FA50025414F /* Parameter.swift */; };
 		CF6F5B381D265FA50025414F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F5B351D265FA50025414F /* Router.swift */; };
 		CF6F5B3A1D267CC40025414F /* EnumType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F5B391D267CC40025414F /* EnumType.swift */; };
+		CF8EE3AD1D2B5DE900041FEB /* YahooLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8EE3AB1D2B5D1400041FEB /* YahooLogin.framework */; };
+		CF8EE3AE1D2B5DE900041FEB /* YahooLogin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CF8EE3AB1D2B5D1400041FEB /* YahooLogin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CF8EE3B01D2B5F5300041FEB /* YahooService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8EE3AF1D2B5F5300041FEB /* YahooService.swift */; };
 		CF9453BE1D2502F7009E2D0E /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9453BD1D2502F7009E2D0E /* Helper.swift */; };
 		CF9453C01D25033D009E2D0E /* CommonCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9453BF1D25033D009E2D0E /* CommonCrypto.swift */; };
 		CF9453C21D250744009E2D0E /* ConfigApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9453C11D250744009E2D0E /* ConfigApi.swift */; };
@@ -83,6 +86,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				CFF894011D250143004A92B7 /* CommonCrypto.framework in Embed Frameworks */,
+				CF8EE3AE1D2B5DE900041FEB /* YahooLogin.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +110,8 @@
 		CF6F5B341D265FA50025414F /* Parameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameter.swift; sourceTree = "<group>"; };
 		CF6F5B351D265FA50025414F /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		CF6F5B391D267CC40025414F /* EnumType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumType.swift; sourceTree = "<group>"; };
+		CF8EE3AB1D2B5D1400041FEB /* YahooLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YahooLogin.framework; sourceTree = "<group>"; };
+		CF8EE3AF1D2B5F5300041FEB /* YahooService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YahooService.swift; sourceTree = "<group>"; };
 		CF9453BD1D2502F7009E2D0E /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		CF9453BF1D25033D009E2D0E /* CommonCrypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonCrypto.swift; sourceTree = "<group>"; };
 		CF9453C11D250744009E2D0E /* ConfigApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigApi.swift; sourceTree = "<group>"; };
@@ -149,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF2A3CFE1D2A465C00408EFD /* SystemConfiguration.framework in Frameworks */,
+				CF8EE3AD1D2B5DE900041FEB /* YahooLogin.framework in Frameworks */,
 				CF2A3CFC1D2A465000408EFD /* SafariServices.framework in Frameworks */,
 				CF2A3CFA1D2A463900408EFD /* AddressBook.framework in Frameworks */,
 				CFF894001D250143004A92B7 /* CommonCrypto.framework in Frameworks */,
@@ -268,6 +275,8 @@
 		CF9376121D2A05F90048FAB8 /* Yahoo */ = {
 			isa = PBXGroup;
 			children = (
+				CF8EE3AB1D2B5D1400041FEB /* YahooLogin.framework */,
+				CF8EE3AF1D2B5F5300041FEB /* YahooService.swift */,
 			);
 			path = Yahoo;
 			sourceTree = "<group>";
@@ -776,6 +785,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFF893BB1D250132004A92B7 /* ViewController.swift in Sources */,
+				CF8EE3B01D2B5F5300041FEB /* YahooService.swift in Sources */,
 				CF9453C61D251EA4009E2D0E /* Request.swift in Sources */,
 				CF6F5B3A1D267CC40025414F /* EnumType.swift in Sources */,
 				CFF893B91D250132004A92B7 /* AppDelegate.swift in Sources */,
@@ -964,6 +974,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MailAssistant/Lib/Google",
+					"$(PROJECT_DIR)/MailAssistant/Services/Yahoo",
 				);
 				INFOPLIST_FILE = MailAssistant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -981,6 +992,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MailAssistant/Lib/Google",
+					"$(PROJECT_DIR)/MailAssistant/Services/Yahoo",
 				);
 				INFOPLIST_FILE = MailAssistant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
